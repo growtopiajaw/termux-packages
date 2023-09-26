@@ -35,14 +35,14 @@ termux_step_setup_variables() {
 		fi
 	else
 		TERMUX_BUILT_PACKAGES_DIRECTORY="/data/data/.built-packages"
-		: "${TERMUX_PKG_MAINTAINER:="Fredrik Fornwall @fornwall"}"
+		: "${TERMUX_PKG_MAINTAINER:="@termux"}"
 	fi
 
 	TERMUX_REPO_URL=(
-		https://termux.net
-		https://dl.bintray.com/grimler/game-packages-21
-		https://dl.bintray.com/grimler/science-packages-21
-		https://dl.bintray.com/grimler/termux-root-packages-21
+		https://packages-cf.termux.dev/apt/termux-main-21
+		https://termux.dev/game-packages-21-bin
+		https://termux.dev/science-packages-21-bin
+		https://termux.dev/termux-root-packages-21-bin
 	)
 
 	TERMUX_REPO_DISTRIBUTION=(
